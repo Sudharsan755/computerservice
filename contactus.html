@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Service Portal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-success">
+            <div class="container">
+                <a href="/" class="navbar-brand">Computer Services</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavBar" aria-controls="myNavBar" aria-expanded="false" ><span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="myNavBar">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item ">
+                            <a href="/" class="nav-link text-decoration-none">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="products.html" class="nav-link">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contactus.html" class="nav-link">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="forms">
+        <form action="" method="get">
+            <div class="card m-3 p-3">
+                <div class="card-title ">
+                    <p><center>User request</center></p>
+                </div>
+                <div class="form-group">
+                    <label for ="name" class="form-label p-2">Name</label>
+                    <input type="text" id="name" name="name"class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for ="email" class="form-label p-2">Email</label>
+                    <input type="email" id="email" name="email"class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for ="phone" class="form-label p-2">Phonenumber</label>
+                    <input type="tel" id="phone" name="phone"class="form-control" maxlength=10>
+                </div>
+                <div class="form-group">
+                    <label for="typeofservice" class="for=label p-2">Choose the type</label>
+                    <select class="form-select" id="typeofservice" name="typeofservice">
+                        <option selected disabled value="">Choose</option>
+                        <option value="find_issue">Find and repair</option>
+                        <option value="replacement">replacement</option>
+                        <option value="upgrade">Upgrade</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label d-block p-2">Select Company</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="company" id="company" value="LENOVO">
+                        <label class="form-check-label" for="company">LENOVO</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="company" id="company" value="ASUS">
+                        <label class="form-check-label" for="company">ASUS</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="company" id="company" value="ACER">
+                        <label class="form-check-label" for="company">ACER</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label d-block">Usage
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" name="usage" id="usage" value="coding">
+                          <label class="form-check-label" for="usage">
+                            Coding
+                        </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" name="usage" id="usage" value="browsing">
+                      <label class="form-check-label" for="usage">
+                        browsing
+                    </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="usage" id="usage" value="gaming">
+                  <label class="form-check-label" for="usage">
+                    gaming
+                </label>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary m-5"> Submit </button>
+    </form>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
